@@ -1,3 +1,20 @@
 from django.shortcuts import render
+from assignment2.models import Card, Task
+from assignment2.serializers import CardSerializer, TaskSerializer
+from rest_framework import generics
 
-# Create your views here.
+class CardCollection(generics.ListCreateAPIView):
+    queryset = Card.objects.all()
+    serializer_class = CardSerializer
+
+class CardItem(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Card.objects.all()
+    serializer_class = CardSerializer
+
+class TaskCollection(generics.ListCreateAPIView):
+    queryset = Task.objects.all()
+    serializer_class = TaskSerializer
+
+class TaskItem(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Task.objects.all()
+    serializer_class = TaskSerializer

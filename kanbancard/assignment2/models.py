@@ -8,6 +8,7 @@ class Card(models.Model):
 
 
 class Task(models.Model):
-    card = models.ForeignKey(Card, on_delete=models.CASCADE)
+    card = models.ForeignKey(Card, related_name='tasks', on_delete=models.CASCADE)
     description = models.CharField(max_length=200,blank=False)
     done = models.BooleanField(default=False)
+
