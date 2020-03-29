@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     # 'assignment1.apps.Assignment1Config',
-    'assignment2.apps.Assignment2Config'
+    # 'assignment2.apps.Assignment2Config',
+     'assignment3.apps.Assignment1Config'
 ]
 
 MIDDLEWARE = [
