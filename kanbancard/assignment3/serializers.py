@@ -10,7 +10,9 @@ class TaskSerializer(serializers.ModelSerializer):
 
 class CardSerializer(serializers.ModelSerializer):
     tasks = TaskSerializer(many=True, read_only=True)
-
+    owner = serializers.ReadOnlyField(
+        source='owner.username'
+    )
     class Meta:
         model = Card
         fields = '__all__'
