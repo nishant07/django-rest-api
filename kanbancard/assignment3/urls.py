@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from assignment2.views import CardCollection, CardItem, TaskCollection, TaskItem
+from assignment3.views import CardCollection, CardItem, TaskCollection, TaskItem
 
 urlpatterns = [
     url(r'cards/$', CardCollection.as_view()),

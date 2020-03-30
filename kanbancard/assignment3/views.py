@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from assignment2.models import Card, Task
-from assignment2.serializers import CardSerializer, TaskSerializer
+from assignment3.models import Card, Task
+from assignment3.serializers import CardSerializer, TaskSerializer
 from rest_framework import generics
 
 class CardCollection(generics.ListCreateAPIView):

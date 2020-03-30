@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     # 'assignment1.apps.Assignment1Config',
     # 'assignment2.apps.Assignment2Config',
-     'assignment3.apps.Assignment1Config'
+     'assignment3.apps.Assignment3Config'
 ]
 
 MIDDLEWARE = [
