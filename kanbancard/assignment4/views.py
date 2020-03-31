@@ -11,7 +11,7 @@ class CardCollection(generics.ListCreateAPIView):
     serializer_class = CardSerializer
 
     permission_classes = [permissions.IsAuthenticated, IsOwner]
-
+    name = 'card-collection'
     def get_queryset(self):
         return Card.objects.filter(owner=self.request.user)
 
