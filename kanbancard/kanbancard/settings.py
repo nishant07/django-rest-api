@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     # 'assignment1.apps.Assignment1Config',
     # 'assignment2.apps.Assignment2Config',
-     'assignment3.apps.Assignment3Config'
+    #  'assignment3.apps.Assignment3Config',
+     'assignment4.apps.Assignment4Config'
 ]
 
 MIDDLEWARE = [
@@ -128,8 +129,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-        'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
     ),
 }
